@@ -138,6 +138,14 @@
     height: 14%;
 
   }
+
+
+  /* TEAM */
+
+  .emloyee p{
+    font-size: 15px;
+  }
+
   /* catalog */
   .catalog {
     flex-direction: column;
