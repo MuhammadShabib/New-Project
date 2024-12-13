@@ -1,15 +1,15 @@
 @font-face {
   font-family: "yekan";
-  src: url('./Yekan\ Bakh.ttf');
+  src: url("./Yekan\ Bakh.ttf");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "yekan", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  
+  font-family: "yekan", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
-body{
+body {
   overflow-x: hidden;
 }
 header {
@@ -71,7 +71,7 @@ main {
   height: auto;
   width: 100vw;
   background: url(./img/back.jpg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -163,6 +163,8 @@ h1 {
   cursor: pointer;
   transform: translateX(-50%);
   z-index: 10;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .open-lightbox:hover {
@@ -240,6 +242,7 @@ h1 {
 }
 .text {
   text-align: center;
+  font-size: 30px;
 }
 /* Team */
 .team {
@@ -254,6 +257,9 @@ h1 {
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
+}
+.emloyee p{
+  font-size: 26px;
 }
 
 /* cOMPANY */
@@ -284,48 +290,52 @@ h1 {
   text-align: center;
 }
 
-.catalog img{
+.catalog img {
   width: 350px;
-  height:260px;
+  height: 260px;
   border-radius: 10px;
 }
-.download{
+.download {
   margin-right: 40px;
 }
-.download a{
+.download a {
   padding: 8px 30px;
   text-decoration: none;
   color: white;
   border-radius: 20px;
-  background:linear-gradient(to right,hsl(157.99deg 79.43% 34.31%),hsl(228.16deg 84% 34.31%),hsl(302.82deg 43.15% 38.63%));
-  
+  background: linear-gradient(
+    to right,
+    hsl(157.99deg 79.43% 34.31%),
+    hsl(228.16deg 84% 34.31%),
+    hsl(302.82deg 43.15% 38.63%)
+  );
 
   /* (hsl(157.99deg 79.43% 34.31%),hsl(228.16deg 84% 34.31%),hsl(302.82deg 43.15% 38.63%)); */
 }
 
-
-
 /* Footer */
 
-
 /* Contacts */
-footer{
+footer {
   width: 100vw;
   padding-top: 20px;
   position: relative;
-  height: auto;
+  /* height: auto; */
   background: url("./img/back.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  
 }
-footer::after{
+footer::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right,hsl(158, 79%, 34%),hsl(228, 84%, 34%),hsl(303, 43%, 39%));
-  opacity: .7;
+  background: linear-gradient(
+    to right,
+    hsl(158, 79%, 34%),
+    hsl(228, 84%, 34%),
+    hsl(303, 43%, 39%)
+  );
+  opacity: 0.7;
   top: 0;
   left: 0;
   /* right: 0; */
@@ -335,102 +345,91 @@ footer::after{
   /* opacity: 1; */
 }
 
-
-.container-footer{
+.container-footer {
   position: relative;
   z-index: 5;
   width: 70%;
   color: white;
- 
 }
-.contacts{
+.contacts {
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .contacts img{
+footer .contacts img {
   width: 200px;
   height: 200px;
   z-index: 5;
-  
 }
-footer .contacts .contact-containt{
+footer .contacts .contact-containt {
   width: 35%;
 }
-footer .contacts .contact-containt .numbers{
+footer .contacts .contact-containt .numbers {
   padding: 1.2rem 0;
   display: flex;
   justify-content: space-between;
-  
-  
 }
-footer .contacts .contact-containt .numbers img{
+footer .contacts .contact-containt .numbers img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-left: 10px;
   z-index: 5;
-  
 }
-footer .contacts .contact-containt .numbers .what{
+footer .contacts .contact-containt .numbers .what {
   display: flex !important;
   flex-direction: row;
   align-items: center;
   z-index: 5;
-  
 }
 
-
-footer .contacts .contact-containt .numbers div{
+footer .contacts .contact-containt .numbers div {
   display: flex;
   flex-direction: column;
   font-size: 20px;
   z-index: 5;
-  
 }
 
-footer .contacts .contact-containt .numbers .number1{
+footer .contacts .contact-containt .numbers .number1 {
   border-left: 2px solid white;
   border-radius: 2.5px;
   padding: 0 0 0 3rem;
-  
-  
 }
 
-footer .contacts .address{
+footer .contacts .address {
   z-index: 5;
-  
+
   padding: 1.2rem;
 }
-footer .contacts .address p{
+footer .contacts .address p {
   z-index: 5;
-  
-  padding: .4rem;
+
+  padding: 0.4rem;
   font-weight: 100;
+  font-size: 22px;
 }
-footer .contacts .address p span{
+footer .contacts .address p span {
   z-index: 5;
-  
-  font-weight: bolder;
-  font-size: 24px;
-  }
 
-footer .map{
-  position: relative;
-  z-index: 999;
+  font-weight: 900;
+  font-size: 24px;
 }
 
+.map {
+  height: 300px;
+  width: 100vw !important;
+}
 
-  footer .copy{
-    text-align: center;
-    width: 100%;
-    height:70px;
-    background-color: #353333;
-    color: white;
-    z-index: 999;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.copy {
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  background-color: #353333;
+  color: white;
+  z-index: 999;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,456 +1,592 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTL Header with Slider and Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./responsiv.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RTL Header with Slider and Navbar</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="./responsiv.css" />
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="links">
-        <a href="#">خانه</a>
-        <a href="#">محصولات</a>
-        <a href="#">درباره ما </a>
-        <a href="#">تماس با ما</a>
-      </div>
-      <div class="logo">
-        <img src="./img/Logo.png" alt="" />
-      </div>
-    </nav>
-    <div class="slider">
-      <div class="slide active">
-        <img class="imgslide" src="img/slide1.png" alt="" />
-      </div>
-      <div class="slide">
-        <img class="imgslide" src="./img/slide1.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img class="imgslide" src="img/slide1.png" alt="" />
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="Products">
-      <div class="container container-pro">
-        <h1 class="text_products text_weight" data-aos="fade-up" data-aos-delay="30">
-          گالری محصولات
-        </h1>
-        <div class="push">
-          <div class="button-container">
-            <button class="btn1" id="loadMore">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                class="bi bi-chevron-right right nextt" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-              </svg>
-            </button>
-          </div>
-
-          <div id="gallery">
-            <!-- Initial Products -->
-            <div class="product-container active" id="page1">
-              <div class="row" data-aos="zoom-out" data-aos-delay="90">
-                <!-- Row 1 -->
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/1.jpg" alt="محصول 1" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/2.jpg" alt="محصول 2" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/3.jpg" alt="محصول 3" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/4.jpg" alt="محصول 4" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/5.jpg" alt="محصول 5" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/6.jpg" alt="محصول 6" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-container" id="page2">
-              <div class="row">
-                <!-- Row 1 -->
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/7.jpg" alt="محصول 7" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/8.jpg" alt="محصول 8" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/9.jpg" alt="محصول 9" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 10" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/11.jpg" alt="محصول 11" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/12.jpg" alt="محصول 12" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-container" id="page3">
-              <div class="row">
-                <!-- Row 1 -->
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/13.jpg" alt="محصول 13" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/14.jpg" alt="محصول 14" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/15.jpg" alt="محصول 15" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/16.jpg" alt="محصول 16" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/17.jpg" alt="محصول 17" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/18.jpg" alt="محصول 18" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-container" id="page4">
-              <div class="row">
-                <!-- Row 1 -->
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/19.jpg" alt="محصول 19" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/20.jpg" alt="محصول 20" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/21.jpg" alt="محصول 21" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/22.jpg" alt="محصول 22" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/23.jpg" alt="محصول 23" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/24.jpg" alt="محصول 24" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-container" id="page5">
-              <div class="row">
-                <!-- Row 1 -->
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/25.jpg" alt="محصول 25" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/26.jpg" alt="محصول 26" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/27.jpg" alt="محصول 27" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/28.jpg" alt="محصول 28" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/29.jpg" alt="محصول 29" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/30.jpg" alt="محصول 30" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-container" id="page6">
-              <div class="row">
-                <!-- Row 1 -->
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 13" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 14" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 15" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 16" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 17" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                  <div class="product">
-                    <img src="./imgpo/10.jpg" alt="محصول 18" data-details="" />
-                    <button class="btn open-lightbox">مشاهده جزئیات</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center mt-4">
-            <button class="btn1" id="prevPage">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                class="bi bi-chevron-left nextt" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-              </svg>
-            </button>
-          </div>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="links">
+          <a href="#">خانه</a>
+          <a href="#">محصولات</a>
+          <a href="#">درباره ما </a>
+          <a href="#">تماس با ما</a>
         </div>
-        <div class="lightbox" id="lightbox" data-aos="zoom-out" data-aos-delay="90">
-          <span class="lightbox-close" id="lightboxClose">&times;</span>
-          <img id="lightboxImage" src="" alt="Product Image" />
-          <p id="lightboxDetails" style="color: white; text-align: center"></p>
+        <div class="logo">
+          <img src="./img/Logo.png" alt="" />
+        </div>
+      </nav>
+      <div class="slider">
+        <div class="slide active">
+          <img class="imgslide" src="img/slide1.png" alt="" />
+        </div>
+        <div class="slide">
+          <img class="imgslide" src="./img/slide1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img class="imgslide" src="img/slide1.png" alt="" />
         </div>
       </div>
-    </section>
+    </header>
+    <main>
+      <section class="Products">
+        <div class="container container-pro">
+          <h1
+            class="text_products text_weight"
+            data-aos="fade-up"
+            data-aos-delay="30"
+          >
+            گالری محصولات
+          </h1>
+          <div class="push">
+            <div class="button-container">
+              <button class="btn1" id="loadMore">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chevron-right right nextt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </button>
+            </div>
 
-    <section class="about">
-      <div class="container container-about">
-        <h1 data-aos="zoom-out" data-aos-delay="90">درباره شرکت ما</h1>
-        <div class="text-about">
-          <p class="text">
-            شرکت تولیدی مواد غذایی ميرويس يوسف: ابتدا در سال 1372 منحیث یک
-            شرکت تجارتی تاسیس گردیده که در اوایل فقط در بخش واردات مواد غذایی
-            از کشورهای همسایه و توزیع آن فعالیت مینمود. از آنجائیکه شرکت با
-            ابتكارات موسسين آن بسیار رشد و جایگاه خوبی در مارکیت و بازارهای
-            افغانستان پیدا نموده بود بنا به بوجود آمدن فرصت سرمایه گذاری داخلی
-            در بخش صنعت در کشور این شرکت سریعاً در سال 1394 اقدام به تاسیس
-            شرکت تولیدی مواد غذایی در شهرک صنعتی هرات را نموده و تحت جواز
-            فعالیت نمبر 2430-03-D وزارت تجارت و سرمایه گذاری افغانستان با
-            رعایت تمام استندردهای ملی و بین المللی شروع به فعالیت نمود. شرکت
-            تولیدی میرويس يوسف اكنون با دارا بودن خطوط تولیدی تمام اتوماتیک و
-            مدرن در حدود بیش از 20 قلم محصولات مختلف از انواع چاکلیتها، گز،
-            کاکائو، شکلات های تحفه ای و اسنکهای غذایی را با کیفیت عالی و ظرفیت
-            بالا تولید و به بازار عرضه مینماید
-          </p>
-        </div>
+            <div id="gallery">
+              <!-- Initial Products -->
+              <div class="product-container active" id="page1">
+                <div class="row" data-aos="zoom-out" data-aos-delay="90">
+                  <!-- Row 1 -->
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/1.jpg" alt="محصول 1" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/2.jpg" alt="محصول 2" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/3.jpg" alt="محصول 3" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/4.jpg" alt="محصول 4" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/5.jpg" alt="محصول 5" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/6.jpg" alt="محصول 6" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <h1 class="text-center text_weight">چشم‌انداز ما</h1>
-        <div class="text-about">
-          <p class="text">
-            ما به دنبال ارائه بهترین محصولات غذایی و ارتقاء کیفیت زندگی سالم
-            افراد جامعه عزیز مان هستیم .هدف ما به یاری پروردگارمنان تبدیل شدن
-            به یکی از پیشگامان صنعت در منطقه و جهان میباشد
-          </p>
-        </div>
+              <div class="product-container" id="page2">
+                <div class="row">
+                  <!-- Row 1 -->
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/7.jpg" alt="محصول 7" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/8.jpg" alt="محصول 8" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img src="./imgpo/9.jpg" alt="محصول 9" data-details="" />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 10"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/11.jpg"
+                        alt="محصول 11"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/12.jpg"
+                        alt="محصول 12"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="team text-about">
-          <div class="emloyee">
-            <img src="./img/12.jpg" alt="" />
-            <p>میرویس حسینی</p>
-            <h3>رئیس</h3>
+              <div class="product-container" id="page3">
+                <div class="row">
+                  <!-- Row 1 -->
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/13.jpg"
+                        alt="محصول 13"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/14.jpg"
+                        alt="محصول 14"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/15.jpg"
+                        alt="محصول 15"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/16.jpg"
+                        alt="محصول 16"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/17.jpg"
+                        alt="محصول 17"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/18.jpg"
+                        alt="محصول 18"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-container" id="page4">
+                <div class="row">
+                  <!-- Row 1 -->
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/19.jpg"
+                        alt="محصول 19"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/20.jpg"
+                        alt="محصول 20"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/21.jpg"
+                        alt="محصول 21"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/22.jpg"
+                        alt="محصول 22"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/23.jpg"
+                        alt="محصول 23"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/24.jpg"
+                        alt="محصول 24"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-container" id="page5">
+                <div class="row">
+                  <!-- Row 1 -->
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/25.jpg"
+                        alt="محصول 25"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/26.jpg"
+                        alt="محصول 26"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/27.jpg"
+                        alt="محصول 27"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/28.jpg"
+                        alt="محصول 28"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/29.jpg"
+                        alt="محصول 29"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/30.jpg"
+                        alt="محصول 30"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-container" id="page6">
+                <div class="row">
+                  <!-- Row 1 -->
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 13"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 14"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 15"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 16"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 17"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                    <div class="product">
+                      <img
+                        src="./imgpo/10.jpg"
+                        alt="محصول 18"
+                        data-details=""
+                      />
+                      <button class="btn open-lightbox">مشاهده جزئیات</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <button class="btn1" id="prevPage">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chevron-left nextt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="emloyee">
-            <img src="./img/12.jpg" alt="" />
-            <p>یوسف حسینی</p>
-            <h3>معاون</h3>
-          </div>
-          <div class="emloyee">
-            <img src="./img/12.jpg" alt="" />
-            <p>توفیق حسینی</p>
-            <h3>مدیر عامل</h3>
-          </div>
-          <div class="emloyee">
-            <img src="./img/12.jpg" alt="" />
-            <p>اجمل حسینی</p>
-            <h3>مدیر اجرائیه</h3>
+          <div
+            class="lightbox"
+            id="lightbox"
+            data-aos="zoom-out"
+            data-aos-delay="90"
+          >
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img id="lightboxImage" src="" alt="Product Image" />
+            <p
+              id="lightboxDetails"
+              style="color: white; text-align: center"
+            ></p>
           </div>
         </div>
-        <div class="company">
-          <h1>چارت سازمانی</h1>
-          <div>
+      </section>
+
+      <section class="about">
+        <div class="container container-about">
+          <h1 data-aos="zoom-out" data-aos-delay="90">درباره شرکت ما</h1>
+          <div class="text-about">
+            <p class="text">
+              شرکت تولیدی مواد غذایی ميرويس يوسف: ابتدا در سال 1372 منحیث یک
+              شرکت تجارتی تاسیس گردیده که در اوایل فقط در بخش واردات مواد غذایی
+              از کشورهای همسایه و توزیع آن فعالیت مینمود. از آنجائیکه شرکت با
+              ابتكارات موسسين آن بسیار رشد و جایگاه خوبی در مارکیت و بازارهای
+              افغانستان پیدا نموده بود بنا به بوجود آمدن فرصت سرمایه گذاری داخلی
+              در بخش صنعت در کشور این شرکت سریعاً در سال 1394 اقدام به تاسیس
+              شرکت تولیدی مواد غذایی در شهرک صنعتی هرات را نموده و تحت جواز
+              فعالیت نمبر 2430-03-D وزارت تجارت و سرمایه گذاری افغانستان با
+              رعایت تمام استندردهای ملی و بین المللی شروع به فعالیت نمود. شرکت
+              تولیدی میرويس يوسف اكنون با دارا بودن خطوط تولیدی تمام اتوماتیک و
+              مدرن در حدود بیش از 20 قلم محصولات مختلف از انواع چاکلیتها، گز،
+              کاکائو، شکلات های تحفه ای و اسنکهای غذایی را با کیفیت عالی و ظرفیت
+              بالا تولید و به بازار عرضه مینماید
+            </p>
+          </div>
+
+          <h1 class="text-center text_weight">چشم‌انداز ما</h1>
+          <div class="text-about">
+            <p class="text">
+              ما به دنبال ارائه بهترین محصولات غذایی و ارتقاء کیفیت زندگی سالم
+              افراد جامعه عزیز مان هستیم .هدف ما به یاری پروردگارمنان تبدیل شدن
+              به یکی از پیشگامان صنعت در منطقه و جهان میباشد
+            </p>
+          </div>
+
+          <div class="team text-about">
+            <div class="emloyee">
+              <img src="./img/12.jpg" alt="" />
+              <p>میرویس حسینی</p>
+              <h3>رئیس</h3>
+            </div>
+            <div class="emloyee">
+              <img src="./img/12.jpg" alt="" />
+              <p>یوسف حسینی</p>
+              <h3>معاون</h3>
+            </div>
+            <div class="emloyee">
+              <img src="./img/12.jpg" alt="" />
+              <p>توفیق حسینی</p>
+              <h3>مدیر عامل</h3>
+            </div>
+            <div class="emloyee">
+              <img src="./img/12.jpg" alt="" />
+              <p>اجمل حسینی</p>
+              <h3>مدیر اجرائیه</h3>
+            </div>
+          </div>
+          <div class="company">
+            <h1>چارت سازمانی</h1>
+            <div>
+              <img src="./img/photo_2024-11-21_11-38-44.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="catalog">
+            <div class="download">
+              <h1>کاتالوگ محصولات ما</h1>
+              <a href="#">دانلود کاتالوگ</a>
+            </div>
             <img src="./img/photo_2024-11-21_11-38-44.jpg" alt="" />
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="catalog">
-          <div class="download">
-            <h1>کاتالوگ محصولات ما</h1>
-            <a href="#">دانلود کاتالوگ</a>
-          </div>
-          <img src="./img/photo_2024-11-21_11-38-44.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container container-footer">
-      <div class="contacts">
-        <img src="./img/Logo.png" alt="" />
-        <div class="contact-containt">
-          <h2>ارتباط با ما:</h2>
-          <hr />
-          <div class="numbers">
-            <div class="what">
-              <img src="./img/12.jpg" alt="" />
-              <div class="number1">
-                <span>0799365112</span>
-                <span>0799333131</span>
+    <!-- Footer -->
+    <footer>
+      <div class="container container-footer">
+        <div class="contacts">
+          <img src="./img/Logo.png" alt="" />
+          <div class="contact-containt">
+            <h2>ارتباط با ما:</h2>
+            <hr />
+            <div class="numbers">
+              <div class="what">
+                <img src="./img/12.jpg" alt="" />
+                <div class="number1">
+                  <span>0799365112</span>
+                  <span>0799333131</span>
+                </div>
+              </div>
+              <div>
+                <span>0700194747</span>
+                <span>0700406427</span>
               </div>
             </div>
-            <div>
-              <span>0700194747</span>
-              <span>0700406427</span>
-            </div>
-          </div>
 
-          <div class="address">
-            <p>
-              <span>آدرس شرکت: </span> افغانستان، هرات، شهرک صنعتی، فاز دوم،
-              شکوفه چهارم
-            </p>
-            <p>
-              <span>دفتر فروشات: </span> افغانستان، هرات، جاده بهزاد، رو به
-              روی AIBبانک
-            </p>
+            <div class="address">
+              <p>
+                <span>آدرس شرکت: </span> افغانستان، هرات، شهرک صنعتی، فاز دوم،
+                شکوفه چهارم
+              </p>
+              <p>
+                <span>دفتر فروشات: </span> افغانستان، هرات، جاده بهزاد، رو به
+                روی AIBبانک
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-    </div>
+    </footer>
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5656.429275222109!2d62.203074910585336!3d34.21805243450175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3cdb8658985b4b%3A0x4184a729b5d636dd!2sPhase%202%2C%20Guzara%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1734088983392!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5656.429275222109!2d62.203074910585336!3d34.21805243450175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3cdb8658985b4b%3A0x4184a729b5d636dd!2sPhase%202%2C%20Guzara%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1734088983392!5m2!1sen!2s"
+        width="100%"
+        height="300"
+        style="border: 0"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
     <div class="copy">
       <p>کلیه حقوق کپی مربوط به شرکت میرویس یوسف است © 2024</p>
       <div>
-        <a href="https://facebook.com" target="_blank"> <i class="fa-brands fa-facebook icons"></i> </a>
-        <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram icons"></i> </a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook icons"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram icons"></i>
+        </a>
       </div>
     </div>
 
-
-
-  </footer>
-
-  <script src="./main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
