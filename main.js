@@ -106,3 +106,33 @@ document.getElementById('lightbox').addEventListener('click', (event) => {
 });
 // Show first page initially
 showPage(currentPage);
+
+
+
+// download images
+
+
+const imageUrls = [
+    './imgpo/4.jpg',
+    './imgpo/1.jpg',
+    './imgpo/3.jpg',
+    './imgpo/2.jpg',
+    './imgpo/5.jpg',
+    './imgpo/6.jpg',
+    './imgpo/7.jpg',
+    './imgpo/8.jpg',
+    './imgpo/9.jpg',
+];
+
+function downloadImages() {
+    imageUrls.forEach((url, index) => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `image${index + 1}.jpg`; // Suggested filename
+        document.body.appendChild(link); // Append the link to the document
+        link.click(); // Simulate a click on the link
+        document.body.removeChild(link); // Remove the link from the document
+    });
+}
+
+document.getElementById('downloadImagesBtn').addEventListener('click', downloadImages);
