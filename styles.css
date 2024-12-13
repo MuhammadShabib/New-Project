@@ -2,6 +2,7 @@
   font-family: "yekan";
   src: url("./Yekan\ Bakh.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +10,12 @@
   font-family: "yekan", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
 }
+
 body {
   overflow-x: hidden;
+  background: linear-gradient(to right, hsl(149.57deg 51.11% 73.53%), hsl(52.58deg 71.2% 75.49%), hsl(336.52deg 83.13% 83.73%));
 }
+
 header {
   position: relative;
   width: 100vw;
@@ -30,6 +34,7 @@ header {
   position: absolute;
   padding-right: 10%;
 }
+
 .navbar a {
   color: white;
   border: 1px solid #fff;
@@ -38,19 +43,23 @@ header {
   text-decoration: none;
   margin: 0 5px;
 }
+
 .logo {
   padding-left: 8% !important;
 }
+
 .logo img {
   width: 60px;
   height: 60px;
 }
+
 .slider {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
+
 .slide {
   width: 100%;
   height: 100%;
@@ -58,10 +67,12 @@ header {
   opacity: 0;
   transition: opacity 1s ease;
 }
+
 .slide img {
   width: 100%;
   height: 100%;
 }
+
 .active {
   opacity: 1;
 }
@@ -75,6 +86,7 @@ main {
   background-position: center;
   background-size: cover;
 }
+
 /* ////////////////////////////////////////////// page products */
 .Products {
   width: 100vw;
@@ -85,16 +97,19 @@ main {
   padding: 50px;
   /* margin-top: 5px; */
 }
+
 .container {
   width: 85%;
   margin: auto;
 }
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .push {
   display: flex;
   justify-content: space-around;
@@ -130,6 +145,7 @@ h1 {
   transition: transform 0.2s;
   height: 100%;
 }
+
 .product_img {
   width: calc(33% - 10px);
   margin-bottom: 15px;
@@ -177,6 +193,7 @@ h1 {
   color: #000;
   background-color: #ffffff00;
 }
+
 #loadMore {
   color: #000;
   margin: 20px;
@@ -187,6 +204,7 @@ h1 {
   border: none !important;
   outline: none !important;
 }
+
 .nextt {
   color: hsl(356.47deg 94.85% 45.69%);
   font-weight: 900;
@@ -230,20 +248,24 @@ h1 {
   height: auto;
   width: 100%;
 }
+
 .about h1 {
   padding-bottom: 10px;
   padding-top: 30px;
 }
+
 .text-about {
   border: 1px solid white;
   border-radius: 10px;
   padding: 20px;
   background-color: hsla(6, 84%, 95%, 0.484);
 }
+
 .text {
   text-align: center;
   font-size: 30px;
 }
+
 /* Team */
 .team {
   flex-wrap: wrap;
@@ -252,13 +274,15 @@ h1 {
   justify-content: space-around;
   text-align: center;
 }
+
 .emloyee img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
 }
-.emloyee p{
+
+.emloyee p {
   font-size: 26px;
 }
 
@@ -272,6 +296,7 @@ h1 {
   height: 500px;
   overflow: hidden;
 }
+
 .company div img {
   width: 100%;
   height: 100%;
@@ -295,20 +320,20 @@ h1 {
   height: 260px;
   border-radius: 10px;
 }
+
 .download {
   margin-right: 40px;
 }
+
 .download a {
   padding: 8px 30px;
   text-decoration: none;
   color: white;
   border-radius: 20px;
-  background: linear-gradient(
-    to right,
-    hsl(157.99deg 79.43% 34.31%),
-    hsl(228.16deg 84% 34.31%),
-    hsl(302.82deg 43.15% 38.63%)
-  );
+  background: linear-gradient(to right,
+      hsl(157.99deg 79.43% 34.31%),
+      hsl(228.16deg 84% 34.31%),
+      hsl(302.82deg 43.15% 38.63%));
 
   /* (hsl(157.99deg 79.43% 34.31%),hsl(228.16deg 84% 34.31%),hsl(302.82deg 43.15% 38.63%)); */
 }
@@ -326,15 +351,14 @@ footer {
   background-position: center;
   background-size: cover;
 }
+
 footer::after {
   content: "";
   position: absolute;
-  background: linear-gradient(
-    to right,
-    hsl(158, 79%, 34%),
-    hsl(228, 84%, 34%),
-    hsl(303, 43%, 39%)
-  );
+  background: linear-gradient(to right,
+      hsl(158, 79%, 34%),
+      hsl(228, 84%, 34%),
+      hsl(303, 43%, 39%));
   opacity: 0.7;
   top: 0;
   left: 0;
@@ -351,25 +375,30 @@ footer::after {
   width: 70%;
   color: white;
 }
+
 .contacts {
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 footer .contacts img {
   width: 200px;
   height: 200px;
   z-index: 5;
 }
+
 footer .contacts .contact-containt {
   width: 35%;
 }
+
 footer .contacts .contact-containt .numbers {
   padding: 1.2rem 0;
   display: flex;
   justify-content: space-between;
 }
+
 footer .contacts .contact-containt .numbers img {
   width: 30px;
   height: 30px;
@@ -377,6 +406,7 @@ footer .contacts .contact-containt .numbers img {
   margin-left: 10px;
   z-index: 5;
 }
+
 footer .contacts .contact-containt .numbers .what {
   display: flex !important;
   flex-direction: row;
@@ -402,6 +432,7 @@ footer .contacts .address {
 
   padding: 1.2rem;
 }
+
 footer .contacts .address p {
   z-index: 5;
 
@@ -409,6 +440,7 @@ footer .contacts .address p {
   font-weight: 100;
   font-size: 22px;
 }
+
 footer .contacts .address p span {
   z-index: 5;
 
