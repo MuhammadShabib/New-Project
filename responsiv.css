@@ -139,9 +139,6 @@
     margin-left: 10px;
     
   }
-  .container-pro{
-    width: 100% ;
-  }
 }
 @media (max-width: 430px) {
   /* Header */
@@ -150,7 +147,18 @@
     text-decoration: none;
     margin: 0 4px;
   }
+  .container-pro{
+    width: 100% ;
+  }
   /* Products */
+  .product_img {
+    width: calc(100% - 10px);
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    margin-top: 10px;
+  }
 
   /* Team */
   .company div {
