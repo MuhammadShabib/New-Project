@@ -1,45 +1,39 @@
+
+const images = [
+    { id: 'image1', mobileSrc: './img/slide2.png', desktopSrc: './img/slide1.png' },
+    { id: 'image2', mobileSrc: './imgpo/13 copy.jpg', desktopSrc: './imgpo/10 copy.jpg' },
+    { id: 'image3', mobileSrc: './imgpo/14 copy.jpg', desktopSrc: './imgpo/11 copy.jpg' },
+    { id: 'image4', mobileSrc: './imgpo/15 copy.jpg', desktopSrc: './imgpo/12 copy.jpg' }
+];
+
 let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+
+function checkWidth() {
+    const isMobile = window.innerWidth <= 820;
+
+    images.forEach(image => {
+        const imgElement = document.getElementById(image.id);
+        imgElement.src = isMobile ? image.mobileSrc : image.desktopSrc;
+    });
+}
 
 function showSlide(index) {
+    const slides = document.querySelectorAll(".slide");
     slides[currentSlide].classList.remove("active");
     currentSlide = (index + slides.length) % slides.length;
     slides[currentSlide].classList.add("active");
 }
+
 setInterval(() => {
     showSlide(currentSlide + 1);
-}, 3000);
-///////////////////////////////////////
+}, 2000); // تغییر به هر 3 ثانیه
 
+window.addEventListener('resize', checkWidth);
+window.addEventListener('load', () => {
+    checkWidth();
+    showSlide(currentSlide);
+});
 
-const images = document.querySelectorAll(".imgslide");
-
-const mobileQuery = window.matchMedia("(max-width: 768px)");
-
-function updateImageSources(e) {
-    images.forEach((image, index) => {
-        if (e.matches) {
-            // For mobile screens
-            image.src = './img/slide2.png'; // Mobile-specific 
-        } else {
-            // For larger screens
-            image.src = './img/slide1.png'; // Desktop-specific 
-
-        }
-    });
-}
-
-// Listen for changes in screen size
-mobileQuery.addEventListener("change", updateImageSources);
-
-// Initial check
-updateImageSources(mobileQuery);
-
-
-
-
-
-////////////////////////////////////////////// 
 //////////////////// بخش محصولات
 let currentPage = 1;
 const totalPages = 6; // Total number of product pages
@@ -90,6 +84,7 @@ document.querySelectorAll('.open-lightbox').forEach(button => {
         lightboxImage.src = productImage.src;
         lightboxDetails.textContent = productImage.getAttribute('alt'); // Display the "alt" text as details
         lightbox.style.display = 'flex'; // Show lightbox
+        lightbox.style.fontSize = '20px'; // Show lightbox
         lightbox.style.flexDirection = 'column'; // Show lightbox
     });
 });
@@ -105,33 +100,3 @@ document.getElementById('lightbox').addEventListener('click', (event) => {
 });
 // Show first page initially
 showPage(currentPage);
-
-
-
-// download images
-
-
-const imageUrls = [
-    './imgpo/4.jpg',
-    './imgpo/1.jpg',
-    './imgpo/3.jpg',
-    './imgpo/2.jpg',
-    './imgpo/5.jpg',
-    './imgpo/6.jpg',
-    './imgpo/7.jpg',
-    './imgpo/8.jpg',
-    './imgpo/9.jpg',
-];
-
-function downloadImages() {
-    imageUrls.forEach((url, index) => {
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = `image${index + 1}.jpg`; // Suggested filename
-        document.body.appendChild(link); // Append the link to the document
-        link.click(); // Simulate a click on the link
-        document.body.removeChild(link); // Remove the link from the document
-    });
-}
-
-document.getElementById('downloadImagesBtn').addEventListener('click', downloadImages);
