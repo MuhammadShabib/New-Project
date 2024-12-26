@@ -1,9 +1,8 @@
 
 const images = [
-    { id: 'image1', mobileSrc: './img/slide2.png', desktopSrc: './img/slide1.png' },
-    { id: 'image2', mobileSrc: './imgpo/13 copy.jpg', desktopSrc: './imgpo/10 copy.jpg' },
-    { id: 'image3', mobileSrc: './imgpo/14 copy.jpg', desktopSrc: './imgpo/11 copy.jpg' },
-    { id: 'image4', mobileSrc: './imgpo/15 copy.jpg', desktopSrc: './imgpo/12 copy.jpg' }
+    { id: 'image2', mobileSrc: './img/اسلاید/mobail/IMG_20241226_121500_965.jpg', desktopSrc: './img/اسلاید/IMG_20241226_121436_434.jpg' },
+    { id: 'image3', mobileSrc: './img/اسلاید/mobail/IMG_20241226_121501_786.jpg', desktopSrc: './img/اسلاید/IMG_20241226_121436_481.jpg' },
+    { id: 'image4', mobileSrc: './img/اسلاید/mobail/IMG_20241226_121501_871.jpg', desktopSrc: './img/اسلاید/IMG_20241226_121436_526.jpg' }
 ];
 
 let currentSlide = 0;
@@ -100,3 +99,34 @@ document.getElementById('lightbox').addEventListener('click', (event) => {
 });
 // Show first page initially
 showPage(currentPage);
+
+
+
+// download images
+
+
+const imageUrls = [
+    './img/3.pdf'
+    // './imgpo/4.jpg',
+    // './imgpo/1.jpg',
+    // './imgpo/3.jpg',
+    // './imgpo/2.jpg',
+    // './imgpo/5.jpg',
+    // './imgpo/6.jpg',
+    // './imgpo/7.jpg',
+    // './imgpo/8.jpg',
+    // './imgpo/9.jpg',
+];
+
+function downloadImages() {
+    imageUrls.forEach((url, index) => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `image${index + 1}.pdf`; // Suggested filename
+        document.body.appendChild(link); // Append the link to the document
+        link.click(); // Simulate a click on the link
+        document.body.removeChild(link); // Remove the link from the document
+    });
+}
+
+document.getElementById('downloadButton').addEventListener('click', downloadImages);

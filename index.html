@@ -1,328 +1,275 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RTL Header with Slider and Navbar</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./responsiv.css" />
- 
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="links">
-          <a href="#">خانه</a>
-          <a href="#">محصولات</a>
-          <a href="#">درباره ما </a>
-          <a href="#">تماس با ما</a>
-        </div>
-        <div class="logo">
-          <img src="./img/Logo.png" alt="" />
-        </div>
-      </nav>
-      <div class="slider">
-        <div class="slides">
-            <div class="slide active"><img id="image1" class="imgslide" src="./img/slide1.png" alt="تصویر 1"></div>
-            <div class="slide"><img id="image2" class="imgslide" src="./imgpo/10 copy.jpg" alt="تصویر 2"></div>
-            <div class="slide"><img id="image3" class="imgslide" src="./imgpo/11 copy.jpg" alt="تصویر 3"></div>
-            <div class="slide"><img id="image4" class="imgslide" src="./imgpo/12 copy.jpg" alt="تصویر 4"></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ميرويس يوسف</title>
+  <link rel="website icon" type="" href="./img/Logo.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./responsiv.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="links">
+        <a href="#">خانه</a>
+        <a href="#">محصولات</a>
+        <a href="#">درباره ما </a>
+        <a href="#">تماس با ما</a>
+      </div>
+      <div class="logo">
+        <img src="./img/Logo.png" alt="" />
+      </div>
+    </nav>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide active"><img id="image1" class="imgslide"
+            src="./img/اسلاید/mobail/IMG_20241226_121500_965.jpg" alt="تصویر 1"></div>
+
+        <div class="slide"><img id="image2" class="imgslide" src="./img/اسلاید/mobail/IMG_20241226_121501_786.jpg"
+            alt="تصویر 2"></div>
+        <div class="slide"><img id="image3" class="imgslide" src="./img/اسلاید/mobail/IMG_20241226_121501_871.jpg"
+            alt="تصویر 3"></div>
+      </div>
     </div>
-    </header>
-    <main>
-      <section class="Products">
-        <div class="container container-pro">
-          <h1
-            class="text_products text_weight"
-            data-aos="fade-up"
-            data-aos-delay="30"
-          >
-            گالری محصولات
-          </h1>
-          <div class="push">
-            <div class="button-container">
-              <button class="btn1" id="loadMore">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-chevron-right right nextt"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
-              </button>
+  </header>
+  <main>
+    <section class="Products">
+      <div class="container container-pro">
+        <h1 class="text_products text_weight" data-aos="fade-up" data-aos-delay="30">
+          گالری محصولات
+        </h1>
+        <div class="push">
+          <div class="button-container">
+            <button class="btn1" id="loadMore">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-chevron-right right nextt" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </button>
+          </div>
+
+          <div id="gallery">
+            <!-- Initial Products -->
+            <div class="product-container active" id="page1">
+              <div class="row" data-aos="zoom-out" data-aos-delay="90">
+                <!-- Row 1 -->
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/2 copy.jpg"
+                      alt="چاکلت آبنبات نفیس مغزدار با طعم میوه۱۲ کیلو گرام در ۴ پاکت ۶ پاکت ۸ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/6 copy.jpg"
+                      alt="چاکلت تافی آبدین مغزدار با طعم نارگیل جایزه دار ۱۲ کیلو گرام ۴ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/7 copy.jpg"
+                      alt="چاکلت آبنبات آیتن پاستیل مغزدار با طعم میوه۱۲ کیلو گرام ۴پاکت ۶ پاکت ۸ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/9 copy.jpg"
+                      alt="چاکلت آبنبات آبدین آیشن میوه ای مغز دار  با طعم میوه جایزه دار۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/10 copy.jpg" alt="چاکلت تافی طلوع مغزدار با طعم نارگیل ۱۲ کیلو گرام ۴ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/11 copy.jpg" alt="چاکلت تافی آرین مغز دار با طعم کاکائو ۱۲ کیلو گرام ۴ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div id="gallery">
-              <!-- Initial Products -->
-              <div class="product-container active" id="page1">
-                <div class="row" data-aos="zoom-out" data-aos-delay="90">
-                  <!-- Row 1 -->
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/2 copy.jpg" alt="چاکلت آبنبات نفیس مغزدار با طعم میوه۱۲ کیلو گرام در ۴ پاکت ۶ پاکت ۸ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+            <div class="product-container" id="page2">
+              <div class="row">
+                <!-- Row 1 -->
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/12 copy.jpg"
+                      alt="چاکلت آبنبات آبدین شیری مغز دار با طعم شیر و نارگیل ۱۲ کیلو گرام ۴ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/6 copy.jpg" alt="چاکلت تافی آبدین مغزدار با طعم نارگیل جایزه دار ۱۲ کیلو گرام ۴ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/13 copy.jpg" alt="چاکلت تافی آریا مغزدار با طعم نارگیل ۱۲ کیلو گرام ۴ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/7 copy.jpg" alt="چاکلت آبنبات آیتن پاستیل مغزدار با طعم میوه۱۲ کیلو گرام ۴پاکت ۶ پاکت ۸ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/14 copy.jpg"
+                      alt="چاکلت تافی آژند استایل مغزدار کاکائو با طعم کاکائو ۱۲ کیلو گرام ۴ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/9 copy.jpg" alt="چاکلت آبنبات آبدین آیشن میوه ای مغز دار  با طعم میوه جایزه دار۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/15 copy.jpg"
+                      alt=" چاکلت آبنبات نفیس میوه ای مغزدار شوگر فری با طعم میوه ۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/10 copy.jpg" alt="چاکلت تافی طلوع مغزدار با طعم نارگیل ۱۲ کیلو گرام ۴ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/66- copy.jpg"
+                      alt="چاکلت آبنبات نفیس شیری مغزدار با طعم شیر جایزه دار ۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/11 copy.jpg" alt="چاکلت تافی آرین مغز دار با طعم کاکائو ۱۲ کیلو گرام ۴ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/16 copy.jpg" alt="چاکلت تافی پاکتی آژند استایل مغزدار فندقی ۶ پاکت ۸۰۰ گرام"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="product-container" id="page2">
-                <div class="row">
-                  <!-- Row 1 -->
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/12 copy.jpg" alt="چاکلت آبنبات آبدین شیری مغز دار با طعم شیر و نارگیل ۱۲ کیلو گرام ۴ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+            <div class="product-container" id="page3">
+              <div class="row">
+                <!-- Row 1 -->
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/17 copy.jpg" alt="چاکلت تافی پاکتی نفیس مغزدار  با طعم کاکائو ۳۰ پاکت ۱۷۰ گرام"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/13 copy.jpg" alt="چاکلت تافی آریا مغزدار با طعم نارگیل ۱۲ کیلو گرام ۴ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/19 copy.jpg"
+                      alt=" چاکلت آبنبات پاستیل آبدین مغزدار با طعم میوه ۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت ۱۲ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img src="./imgpo/14 copy.jpg" alt="چاکلت تافی آژند استایل مغزدار کاکائو با طعم کاکائو ۱۲ کیلو گرام ۴ پاکت" data-details="" />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/20 copy.jpg" alt="چاکلت تافی پاکتی آبدین مغزدار با طعم نارگیل۱۲ کیلو گرام ۱۲ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/15 copy.jpg"
-                        alt=" چاکلت آبنبات نفیس میوه ای مغزدار شوگر فری با طعم میوه ۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/21 copy.jpg" alt="چاکلت آبنبات نفیس انرژی با طعم میوه و اسانس های انرژی از تکنالوژی آلمان و ترکیه
+۶ پاکت ۸۰۰ گرام" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/66- copy.jpg"
-                        alt="چاکلت آبنبات نفیس شیری مغزدار با طعم شیر جایزه دار ۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/22 copy.jpg" alt="چاکلت تافی پاکتی طلوع مغزدار با طعم فندق 
+۱۵ پاکت ۳۰۰ گرام" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/16 copy.jpg"
-                        alt="چاکلت تافی پاکتی آژند استایل مغزدار فندقی ۶ پاکت ۸۰۰ گرام"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/23 copy.jpg" alt=" آرتون مغزدار با طعم توت فرنگی  
+۶۰ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
                 </div>
               </div>
-
-              <div class="product-container" id="page3">
-                <div class="row">
-                  <!-- Row 1 -->
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/17 copy.jpg"
-                        alt="چاکلت تافی پاکتی نفیس مغزدار  با طعم کاکائو ۳۰ پاکت ۱۷۰ گرام"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/19 copy.jpg"
-                        alt=" چاکلت آبنبات پاستیل آبدین مغزدار با طعم میوه ۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت ۱۲ پاکت"data-details=""/>
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/20 copy.jpg"
-                        alt="چاکلت تافی پاکتی آبدین مغزدار با طعم نارگیل۱۲ کیلو گرام ۱۲ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/21 copy.jpg"
-                        alt="چاکلت آبنبات نفیس انرژی با طعم میوه و اسانس های انرژی از تکنالوژی آلمان و ترکیه
-۶ پاکت ۸۰۰ گرام"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/22 copy.jpg"
-                        alt="چاکلت تافی پاکتی طلوع مغزدار با طعم فندق 
-۱۵ پاکت ۳۰۰ گرام"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/23 copy.jpg"
-                        alt=" آرتون مغزدار با طعم توت فرنگی  
-۶۰ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-container" id="page4">
-                <div class="row">
-                  <!-- Row 1 -->
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/24 copy.jpg"
-                        alt="چاکلت تافی پاکتی اونلی مغزدار نارگیل
+            </div>
+            <div class="product-container" id="page4">
+              <div class="row">
+                <!-- Row 1 -->
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/24 copy.jpg" alt="چاکلت تافی پاکتی اونلی مغزدار نارگیل
 ۱۲۰ گرام ۳۶ پاکت
-"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/25 copy.jpg"
-                        alt="آرتون مغزدار با طعم توت فرنگی  
-۳۶ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/25 copy.jpg" alt="آرتون مغزدار با طعم توت فرنگی  
+۳۶ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/26 copy.jpg"
-                        alt="چاکلت آبنبات پاکتی آبدین پاستیل مغزدار میوه ای 
-۴۰ پاکت ۲۵۰ گرام"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/26 copy.jpg" alt="چاکلت آبنبات پاکتی آبدین پاستیل مغزدار میوه ای 
+۴۰ پاکت ۲۵۰ گرام" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/27 copy.jpg"
-                        alt="گز مغز دار و ساده با طعم های عسل، نارگیل،هل
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/27 copy.jpg" alt="گز مغز دار و ساده با طعم های عسل، نارگیل،هل
 ۳۰ پاکت 
-۲۰ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+۲۰ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/28 copy.jpg"
-                        alt="چاکلت تافی پاکتی آبدین مغز دار میوه ای با طعم میوه 
-۱۷۰ گرام ۳۰ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/28 copy.jpg" alt="چاکلت تافی پاکتی آبدین مغز دار میوه ای با طعم میوه 
+۱۷۰ گرام ۳۰ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/29 copy.jpg"
-                        alt="چاکلت تافی نفیس سرنگ مغز دار با طعم کاکائو
-۱۲ کیلو گرام  ۴ پاکت ۳ کیلو"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/29 copy.jpg" alt="چاکلت تافی نفیس سرنگ مغز دار با طعم کاکائو
+۱۲ کیلو گرام  ۴ پاکت ۳ کیلو" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
                 </div>
               </div>
-              <div class="product-container" id="page5">
-                <div class="row">
-                  <!-- Row 1 -->
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/30 copy.jpg"
-                        alt="چاکلت تافی پاکتی آبدین میوه ای 
-۲۵۰ گرام ۴۰ پاکت"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+            </div>
+            <div class="product-container" id="page5">
+              <div class="row">
+                <!-- Row 1 -->
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/30 copy.jpg" alt="چاکلت تافی پاکتی آبدین میوه ای 
+۲۵۰ گرام ۴۰ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/18 copy.jpg"
-                        alt=" چاکلت تافی پاکتی نفیس مغزدار  با طعم کاکائو 
-۳۰ پاکت ۱۷۰ گرام"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/18 copy.jpg" alt=" چاکلت تافی پاکتی نفیس مغزدار  با طعم کاکائو 
+۳۰ پاکت ۱۷۰ گرام" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
                   </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                </div>
+                <!-- <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
                     <div class="product">
                       <img
                         src="./imgpo/10 copy.jpg"
@@ -355,277 +302,304 @@
                   <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
                     <div class="product">
                       <img
-                        src="./imgpo/10 copy.jpg"
+                      src="./imgpo/10 copy.jpg"
                         alt="محصول 30"
                         data-details=""
-                      />
+                        />
                       <button class="btn open-lightbox">مشاهده جزئیات</button>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-container" id="page6">
-                <div class="row">
-                  <!-- Row 1 -->
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/10 copy.jpg"
-                        alt="محصول 13"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/10 copy.jpg"
-                        alt="محصول 14"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/10 copy.jpg"
-                        alt="محصول 15"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/10 copy.jpg"
-                        alt="محصول 16"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/10 copy.jpg"
-                        alt="محصول 17"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                  <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
-                    <div class="product">
-                      <img
-                        src="./imgpo/10 copy.jpg"
-                        alt="محصول 18"
-                        data-details=""
-                      />
-                      <button class="btn open-lightbox">مشاهده جزئیات</button>
-                    </div>
-                  </div>
-                </div>
+                  </div> -->
               </div>
             </div>
 
-            <div class="text-center mt-4">
-              <button class="btn1" id="prevPage">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-chevron-left nextt"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
-                  />
-                </svg>
-              </button>
+
+
+            <div class="product-container" id="page6">
+
+              <div class="row" data-aos="zoom-out" data-aos-delay="90">
+                <!-- Row 1 -->
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/2 copy.jpg"
+                      alt="چاکلت آبنبات نفیس مغزدار با طعم میوه۱۲ کیلو گرام در ۴ پاکت ۶ پاکت ۸ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/6 copy.jpg"
+                      alt="چاکلت تافی آبدین مغزدار با طعم نارگیل جایزه دار ۱۲ کیلو گرام ۴ پاکت" data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/7 copy.jpg"
+                      alt="چاکلت آبنبات آیتن پاستیل مغزدار با طعم میوه۱۲ کیلو گرام ۴پاکت ۶ پاکت ۸ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/9 copy.jpg"
+                      alt="چاکلت آبنبات آبدین آیشن میوه ای مغز دار  با طعم میوه جایزه دار۱۲ کیلو گرام ۴ پاکت ۶ پاکت ۸ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/10 copy.jpg" alt="چاکلت تافی طلوع مغزدار با طعم نارگیل ۱۲ کیلو گرام ۴ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img src="./imgpo/11 copy.jpg" alt="چاکلت تافی آرین مغز دار با طعم کاکائو ۱۲ کیلو گرام ۴ پاکت"
+                      data-details="" />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+              </div>
+
             </div>
+            <!-- <div class="row">
+              
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img
+                      src="./imgpo/10 copy.jpg"
+                      alt="محصول 13"
+                      data-details=""
+                    />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img
+                      src="./imgpo/10 copy.jpg"
+                      alt="محصول 14"
+                      data-details=""
+                    />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img
+                      src="./imgpo/10 copy.jpg"
+                      alt="محصول 15"
+                      data-details=""
+                    />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img
+                      src="./imgpo/10 copy.jpg"
+                      alt="محصول 16"
+                      data-details=""
+                    />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img
+                      src="./imgpo/10 copy.jpg"
+                      alt="محصول 17"
+                      data-details=""
+                    />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+                <div class="product_img col-xl-4 col-md-6 col-sm-5 col-12">
+                  <div class="product">
+                    <img
+                      src="./imgpo/10 copy.jpg"
+                      alt="محصول 18"
+                      data-details=""
+                    />
+                    <button class="btn open-lightbox">مشاهده جزئیات</button>
+                  </div>
+                </div>
+              </div> -->
           </div>
-          <div
-            class="lightbox"
-            id="lightbox"
-            data-aos="zoom-out"
-            data-aos-delay="90"
-          >
-            <span class="lightbox-close" id="lightboxClose">&times;</span>
-            <img id="lightboxImage" src="" alt="Product Image" />
-            <p id="lightboxDetails"
-              style="color: white; text-align: center"
-            ></p>
+
+          <div class="text-center mt-4">
+            <button class="btn1" id="prevPage">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-chevron-left nextt" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+              </svg>
+            </button>
           </div>
         </div>
-      </section>
+        <div class="lightbox" id="lightbox" data-aos="zoom-out" data-aos-delay="90">
+          <span class="lightbox-close" id="lightboxClose">&times;</span>
+          <img id="lightboxImage" src="" alt="Product Image" />
+          <p id="lightboxDetails" style="color: white; text-align: center"></p>
+        </div>
+      </div>
+    </section>
 
-      <section class="about">
-        <div class="container container-about">
-          <h1 data-aos="zoom-out" data-aos-delay="90">درباره شرکت ما</h1>
-          <div class="text-about read-more-container">
-            <p class="text text1 ">
-              شرکت تولیدی مواد غذایی ميرويس يوسف: ابتدا در سال 1372 منحیث یک
-              شرکت تجارتی تاسیس گردیده که در اوایل فقط در بخش واردات مواد غذایی
-              از کشورهای همسایه و توزیع آن فعالیت مینمود. از آنجائیکه شرکت با
-              ابتكارات موسسين آن بسیار رشد و جایگاه خوبی در مارکیت و بازارهای
-              افغانستان پیدا نموده بود بنا به بوجود آمدن فرصت سرمایه گذاری داخلی
-              در بخش صنعت   <span class="read-more-text">در کشور این شرکت سریعاً در سال 1394 اقدام به تاسیس
+    <section class="about">
+      <div class="container container-about">
+        <h1 data-aos="zoom-out" data-aos-delay="90">درباره شرکت ما</h1>
+        <div class="text-about read-more-container">
+          <p class="text text1 ">
+            شرکت تولیدی مواد غذایی ميرويس يوسف: ابتدا در سال 1372 منحیث یک
+            شرکت تجارتی تاسیس گردیده که در اوایل فقط در بخش واردات مواد غذایی
+            از کشورهای همسایه و توزیع آن فعالیت مینمود. از آنجائیکه شرکت با
+            ابتكارات موسسين آن بسیار رشد و جایگاه خوبی در مارکیت و بازارهای
+            افغانستان پیدا نموده بود بنا به بوجود آمدن فرصت سرمایه گذاری داخلی
+            در بخش صنعت <span class="read-more-text">در کشور این شرکت سریعاً در سال 1394 اقدام به تاسیس
               شرکت تولیدی مواد غذایی در شهرک صنعتی هرات را نموده و تحت جواز
               فعالیت نمبر 2430-03-D وزارت تجارت و سرمایه گذاری افغانستان با
               رعایت تمام استندردهای ملی و بین المللی شروع به فعالیت نمود
-            . شرکت
+              . شرکت
               تولیدی میرويس يوسف اكنون با دارا بودن خطوط تولیدی تمام اتوماتیک و
               مدرن در حدود بیش از 20 قلم محصولات مختلف از انواع چاکلیتها، گز،
               کاکائو، شکلات های تحفه ای و اسنکهای غذایی را با کیفیت عالی و ظرفیت
-             بالا تولید و به بازار عرضه مینماید.
-             </span>
+              بالا تولید و به بازار عرضه مینماید.
+            </span>
 
-            </p>
-            
-            <span class="read-more-btn">Read More...</span>
-          </div>
+          </p>
 
-          <h1 class="text-center text_weight">چشم‌انداز ما</h1>
-          <div class="text-about">
-            <p class="text">
-              ما به دنبال ارائه بهترین محصولات غذایی و ارتقاء کیفیت زندگی سالم
-              افراد جامعه عزیز مان هستیم .هدف ما به یاری پروردگارمنان تبدیل شدن
-              به یکی از پیشگامان صنعت در منطقه و جهان میباشد.
-            </p>
-          </div>
+          <span class="read-more-btn">ادامه</span>
+        </div>
 
-          <div class="team text-about">
-            <div class="emloyee">
-              <img src="./img/12.jpg" alt="" />
-              <p>میرویس حسینی</p>
-              <h3>رئیس</h3>
-            </div>
-            <div class="emloyee">
-              <img src="./img/12.jpg" alt="" />
-              <p>یوسف حسینی</p>
-              <h3>معاون</h3>
-            </div>
-            <div class="emloyee">
-              <img src="./img/12.jpg" alt="" />
-              <p>توفیق حسینی</p>
-              <h3>مدیر عامل</h3>
-            </div>
-            <div class="emloyee">
-              <img src="./img/12.jpg" alt="" />
-              <p>اجمل حسینی</p>
-              <h3>مدیر اجرائیه</h3>
-            </div>
-          </div>
-          <div class="company">
-            <h1>چارت سازمانی</h1>
-            <div>
-              <img src="./img/photo_2024-11-21_11-38-44.jpg" alt="" />
-            </div>
-          </div>
+        <h1 class="text-center text_weight">چشم‌انداز ما</h1>
+        <div class="text-about">
+          <p class="text">
+            ما به دنبال ارائه بهترین محصولات غذایی و ارتقاء کیفیت زندگی سالم
+            افراد جامعه عزیز مان هستیم .هدف ما به یاری پروردگارمنان تبدیل شدن
+            به یکی از پیشگامان صنعت در منطقه و جهان میباشد.
+          </p>
+        </div>
 
-          <div class="catalog">
-            <div class="download">
-              <h1>کاتالوگ محصولات ما</h1>
-              <a href="#">دانلود کاتالوگ</a>
-            </div>
+        <div class="team text-about">
+          <div class="emloyee">
+            <img src="./img/اسلاید/1.png" alt="" />
+            <p>میرویس حسینی</p>
+            <h3>رئیس</h3>
+          </div>
+          <div class="emloyee">
+            <img src="./img/اسلاید/2.png" alt="" />
+            <p>یوسف حسینی</p>
+            <h3>معاون</h3>
+          </div>
+          <div class="emloyee">
+            <img src="./img/اسلاید/3.png" alt="" />
+            <p>توفیق حسینی</p>
+            <h3>مدیر عامل</h3>
+          </div>
+          <div class="emloyee">
+            <img src="./img/اسلاید/4.png" alt="" />
+            <p>اجمل حسینی</p>
+            <h3>مدیر اجرائیه</h3>
+          </div>
+        </div>
+        <div class="company">
+          <h1>چارت سازمانی</h1>
+          <div>
             <img src="./img/photo_2024-11-21_11-38-44.jpg" alt="" />
           </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container container-footer">
-        <div class="contacts">
-          <img src="./img/Logo.png" alt="" />
-          <div class="contact-containt">
-            <h2>ارتباط با ما:</h2>
-            <hr />
-            <div class="numbers">
-              <div class="what">
-                <div class="number1">
-                  <span><img src="./img/12.jpg" alt="" />0799365112</span>
-                  <span><img src="./img/12.jpg" alt="" />0799333131</span>
-                </div>
-              </div>
-              <div class="colq"></div>
-              <div>
-                <span><img src="./img/12.jpg" alt="" />0700194747</span>
-                <span><img src="./img/12.jpg" alt="" />0700406427</span>
+        <div class="catalog">
+          <div class="download">
+            <h1>کاتالوگ محصولات ما</h1>
+            <a href="#" id="downloadButton">دانلود کاتالوگ</a>
+          </div>
+          <img src="./img/photo_2024-11-21_11-38-44.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container container-footer">
+      <div class="contacts">
+        <img src="./img/Logo.png" alt="" />
+        <div class="contact-containt">
+          <h2>ارتباط با ما:</h2>
+          <hr />
+          <div class="numbers">
+            <div class="what">
+              <div class="number1">
+                <span><img src="./img/12.jpg" alt="" /><a href="tel:0799365112">0799365112</a></span>
+                <span><img src="./img/12.jpg" alt="" /><a href="tel:0799333131">0799333131</a></span>
               </div>
             </div>
-
-            <div class="address">
-              <p>
-                <span>آدرس شرکت: </span> افغانستان، هرات، شهرک صنعتی، فاز دوم،
-                شکوفه چهارم
-              </p>
-              <p>
-                <span>دفتر فروشات: </span> افغانستان، هرات، جاده بهزاد، رو به
-                روی AIBبانک
-              </p>
+            <div class="colq"></div>
+            <div>
+              <span><img src="./img/12.jpg" alt="" /><a href="tel:0700194747">0700194747</a></span>
+              <span><img src="./img/12.jpg" alt="" /><a href="tel:0700406427">0700406427</a></span>
             </div>
+          </div>
+
+          <div class="address">
+            <p>
+              <span>آدرس شرکت: </span> افغانستان، هرات، شهرک صنعتی، فاز دوم،
+              شکوفه چهارم
+            </p>
+            <p>
+              <span>دفتر فروشات: </span> افغانستان، هرات، جاده بهزاد، رو به
+              روی AIBبانک
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5656.429275222109!2d62.203074910585336!3d34.21805243450175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3cdb8658985b4b%3A0x4184a729b5d636dd!2sPhase%202%2C%20Guzara%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1734088983392!5m2!1sen!2s"
-        width="100%"
-        height="300"
-        style="border: 0"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
     </div>
-    <div class="copy">
-      <p>کلیه حقوق این وبسایت متعلق به شرکت صنایع غذایی میرویس یوسف بوده محفوظ است u2024</p>
-      <div>
-        <a href="https://facebook.com" target="_blank">
-          <i class="fa-brands fa-facebook icons"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <i class="fa-brands fa-instagram icons"></i>
-        </a>
-      </div>
-    </div>
+  </footer>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5656.429275222109!2d62.203074910585336!3d34.21805243450175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3cdb8658985b4b%3A0x4184a729b5d636dd!2sPhase%202%2C%20Guzara%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1734088983392!5m2!1sen!2s"
+      width="100%" height="300" style="border: 0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="copy">
+    <p>کلیه حقوق این وبسایت متعلق به شرکت صنایع غذایی میرویس یوسف بوده محفوظ است 2024</p>
 
-    <script src="./main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  </div>
 
+  <script src="./main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 
-<script>
-  
-const parentContainer =  document.querySelector('.read-more-container');
 
-parentContainer.addEventListener('click', event=>{
+  <script>
 
-    const current = event.target;
+    const parentContainer = document.querySelector('.read-more-container');
 
-    const isReadMoreBtn = current.className.includes('read-more-btn');
+    parentContainer.addEventListener('click', event => {
 
-    if(!isReadMoreBtn) return;
+      const current = event.target;
 
-    const currentText = event.target.parentNode.querySelector('.read-more-text');
+      const isReadMoreBtn = current.className.includes('read-more-btn');
 
-    currentText.classList.toggle('read-more-text--show');
+      if (!isReadMoreBtn) return;
 
-    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+      const currentText = event.target.parentNode.querySelector('.read-more-text');
 
-})
-</script>
+      currentText.classList.toggle('read-more-text--show');
+
+      current.textContent = current.textContent.includes('ادامه') ? "بستن" : "ادامه";
+
+    })
+  </script>
 
 
-  </body>
+</body>
+
 </html>

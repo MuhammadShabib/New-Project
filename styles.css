@@ -6,8 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "yekan", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  font-family: "yekan", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-decoration: none;
+}
+a{
+  color: white;
 }
 body {
   overflow-x: hidden;
@@ -128,6 +131,7 @@ h1 {
   box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   height: 100%;
+
 }
 .product_img {
   width: calc(33% - 10px);
@@ -192,6 +196,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0);
   border: none !important;
   outline: none !important;
+  
  
 }
 
@@ -250,12 +255,14 @@ h1 {
   background-color: hsla(6, 84%, 95%, 0.484);
 }
 .text1 {
-  text-align: justify;
-  font-size: 30px;
-  padding: 20px;
+ 
+  word-spacing: 1px;
+  text-align:justify;
+
+
 }
 .text {
-  letter-spacing: -1px;
+  
   font-size: 30px;
 }
 /* Team */
@@ -468,6 +475,7 @@ footer .contacts .address p span {
 
 .read-more-btn{
   color: #0984e3;
+  font-size: 22px;
 }
 
 .read-more-text{

@@ -179,6 +179,11 @@ main {
   .catalog img{
  margin-top: 1.3rem;
   }
+  .catalog img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
   .download{
     margin: 1.3rem 0px 20px 0;
 
@@ -237,11 +242,14 @@ main {
       justify-content: center;
       align-items: center;
   }
-}
-footer .contacts .contact-containt .numbers img {
-  width: 30px;
-  height: 30px;
-
+  footer .contacts .contact-containt .numbers img {
+    width: 30px;
+    height: 30px;
+    
+  }
+  .emloyee p{
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -266,7 +274,7 @@ footer .contacts .contact-containt .numbers img {
     margin: 5px 0;
   }
 }
-@media (max-width: 323px) {
+@media (max-width: 333px) {
   .open-lightbox {
     width: 80%;
     height: 20%;
@@ -274,8 +282,8 @@ footer .contacts .contact-containt .numbers img {
 
   }
   .catalog img {
-    width: 240px;
-    height: 210px;
+    width: 100%;
+    height: 60%;
     border-radius: 10px;
 }
 footer .contacts .contact-containt .numbers img {
@@ -283,4 +291,8 @@ footer .contacts .contact-containt .numbers img {
   height: 20px;
 
 }
+.text1{
+  letter-spacing: -1px;
+}
+
 }
